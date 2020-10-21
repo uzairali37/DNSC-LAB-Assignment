@@ -117,4 +117,7 @@ The assignment deliverable consists of a Github repository containing:
 
 
 # Design
+- According to the design I have configure the both Router 1 & 2 using Quagga software. It’s an open source software. It has all the functionality of router.  You can find all the configuration in the configuration file with the name of Router1 config file and Router2 Config file. To configure the router, I use OSPF protocol because with the static I was having some troubleshooting problems.  
+
+
 
