@@ -117,4 +117,47 @@ The assignment deliverable consists of a Github repository containing:
 
 
 # Design
-According to the design I have configure the both Router 1 & 2 using Quagga software. It’s an open source software. It has all the functionality of router.  You can find all the configuration in the configuration file with the name of Router1 config file and Router2 Config file. To configure the router, I use OSPF protocol because with the static I was having some troubleshooting problems.  
+According to the assignment requirements. I have created one disposable vagrant file to fulfill the desired requirements. Design is very simple; there are six linux virtual machines, we have configured them with the help of vagrant as  two routers, one OpenVswitch and Three hosts. One host is acting like a Web Server.
+Host-A and Host-B are on different networks:
+
+Host-A  Network and Required addresses are: 119. We have more usable ip addresses that can be used in futur.
+
+-Network ID: 172.16.8.0
+-Subnet Mask: 255.255.252.0
+-Broadcast Address: 172.16.11.255
+-IP address range: 172.16.8.1 - 172.16.11.254
+
+Host-B  Network and Required addresses are: 513. We have more usable ip addresses that can be used in futur.
+
+-Network ID: 172.16.12.0
+-Subnet Mask: 255.255.252.0
+-Broadcast Address: 172.16.15.255
+-IP address range: 172.16.12.1 - 172.16.15.254
+
+Host-C  Network and Required addresses are: 271. Here we have less usable Ip addresses, but we can use a different network. But for test purposes use this network.
+
+-Network ID: 172.16.2.0
+-Subnet Mask: 255.255.255.0
+-Broadcast Address: 172.16.2.255
+-IP address range: 172.16.2.1 - 172.16.2.254
+
+
+
+Network for Router-1 and Router-2 :
+
+-Network ID: 172.16.4.8
+-Subnet Mask: 255.255.255.252
+-Broadcast Address: 172.16.4.11
+-IP address range: 172.16.4.9 - 172.16.4.10
+
+
+Network for Switch, In order to connect the router and switch we use a different network.
+ 
+-Network ID: 172.16.3.0
+-Subnet Mask: 255.255.255.240
+-Broadcast Address: 172.16.3.15
+-IP address range: 172.16.3.1 - 172.16.3.14
+
+
+How we define the Routes for all the machines. One can easily find in the vagrant file.
+ 
