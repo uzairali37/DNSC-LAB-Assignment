@@ -159,6 +159,9 @@ Network for Switch, In order to connect the router and switch we use a different
 - Broadcast Address: 172.16.3.15
 - IP address range: 172.16.3.1 - 172.16.3.14
 
+For the Switch, we have used OpenVSwitch, to configure we created three bridges. On every bridge we added a port and assign an IP address. configuration can be find in Vagrant file.
+
+
 How we define the Routes for all the machines. One can easily find in the vagrant file.
 
 On Host-C we have configured a Web-Server that can easily access from client Host-A and Host-B. To access the web-server we have used the "Lynx" text-based web browser on terminals. One can easily access using this command in the terminal. (lynx http:// [ip address of web-browser]). If you see in the Vagrant file we also successfully installed Lynx-Browser but unfortunately, we had a specific vagrant error then it stoped all the configuration for other machines in the line. So, we suggest you can install manually this browser just by entering the command in terminal "sudo apt-get install -y lynx" and later to access the web-browser as we mentioned the command above "lynx http:// [ip address of web-browser]".
