@@ -117,4 +117,48 @@ The assignment deliverable consists of a Github repository containing:
 
 
 # Design
-[ Your work goes here ]
+According to the assignment requirements. I have created one disposable vagrant file to fulfill the desired requirements. Design is very simple; there are six Linux virtual machines, we have configured them with the help of vagrant as two routers, one OpenVswitch, and Three hosts. One host is acting as a Web Server. 
+
+Host-A and Host-B are on different networks:
+
+Host-A Network and Required addresses are 119. We have more usable IP addresses that can be used in the future.
+
+- Network ID: 172.16.8.0
+- Subnet Mask: 255.255.252.0
+- Broadcast Address: 172.16.11.255
+- IP address range: 172.16.8.1 - 172.16.11.254
+
+Host-B Network and Required addresses are 513. We have more usable IP addresses that can be used in the future.
+
+- Network ID: 172.16.12.0
+- Subnet Mask: 255.255.252.0
+- Broadcast Address: 172.16.15.255
+- IP address range: 172.16.12.1 - 172.16.15.254
+
+Host-C Network and Required addresses are 271. Here we have less usable Ip addresses, but we can use a different network. But for test purposes use this network.
+
+- Network ID: 172.16.2.0
+- Subnet Mask: 255.255.255.0
+- Broadcast Address: 172.16.2.255
+- IP address range: 172.16.2.1 - 172.16.2.254
+
+
+
+Network for Router-1 and Router-2 :
+
+- Network ID: 172.16.4.8
+- Subnet Mask: 255.255.255.252
+- Broadcast Address: 172.16.4.11
+- IP address range: 172.16.4.9 - 172.16.4.10
+
+
+Network for Switch, In order to connect the router and switch we use a different network.
+ 
+- Network ID: 172.16.3.0
+- Subnet Mask: 255.255.255.240
+- Broadcast Address: 172.16.3.15
+- IP address range: 172.16.3.1 - 172.16.3.14
+
+How we define the Routes for all the machines. One can easily find in the vagrant file.
+
+On Host-C we have configured a Web-Server that can easily access from client Host-A and Host-B. To access the web-server we have used the "Lynx" text-based web browser on terminals. One can easily access using this command in the terminal. (lynx http:// [ip address of web-browser]). If you see in the Vagrant file we also successfully installed Lynx-Browser but unfortunately, we had a specific vagrant error then it stoped all the configuration for other machines in the line. So, we suggest you can install manually this browser just by entering the command in terminal "sudo apt-get install -y lynx" and later to access the web-browser as we mentioned the command above "lynx http:// [ip address of web-browser]".
