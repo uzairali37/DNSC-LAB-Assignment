@@ -117,24 +117,25 @@ The assignment deliverable consists of a Github repository containing:
 
 
 # Design
-According to the assignment requirements. I have created one disposable vagrant file to fulfill the desired requirements. Design is very simple; there are six linux virtual machines, we have configured them with the help of vagrant as  two routers, one OpenVswitch and Three hosts. One host is acting like a Web Server.
+According to the assignment requirements. I have created one disposable vagrant file to fulfill the desired requirements. Design is very simple; there are six Linux virtual machines, we have configured them with the help of vagrant as two routers, one OpenVswitch, and Three hosts. One host is acting as a Web Server. 
+
 Host-A and Host-B are on different networks:
 
-Host-A  Network and Required addresses are: 119. We have more usable ip addresses that can be used in futur.
+Host-A Network and Required addresses are 119. We have more usable IP addresses that can be used in the future.
 
 - Network ID: 172.16.8.0
 - Subnet Mask: 255.255.252.0
 - Broadcast Address: 172.16.11.255
 - IP address range: 172.16.8.1 - 172.16.11.254
 
-Host-B  Network and Required addresses are: 513. We have more usable ip addresses that can be used in futur.
+Host-B Network and Required addresses are 513. We have more usable IP addresses that can be used in the future.
 
 - Network ID: 172.16.12.0
 - Subnet Mask: 255.255.252.0
 - Broadcast Address: 172.16.15.255
 - IP address range: 172.16.12.1 - 172.16.15.254
 
-Host-C  Network and Required addresses are: 271. Here we have less usable Ip addresses, but we can use a different network. But for test purposes use this network.
+Host-C Network and Required addresses are 271. Here we have less usable Ip addresses, but we can use a different network. But for test purposes use this network.
 
 - Network ID: 172.16.2.0
 - Subnet Mask: 255.255.255.0
